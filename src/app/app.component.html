@@ -1,13 +1,17 @@
-<router-outlet></router-outlet>
-<!-- <app-tabs>
+<!-- <router-outlet></router-outlet> -->
+<app-tabs>
   <app-tab  
     *ngFor="let item of items"
-    title="{{ item.type }}"
+    [tab]="tab"
   >
-    <app-card
-      [items]="item.items"
-    ></app-card>
-  </app-tab>
-</app-tabs> -->
-<!-- <app-tab title="Tab 2">Contenido de Tab 2</app-tab> -->
-<!-- <app-tab title="Tab 3">Contenido de Tab 3</app-tab> -->
+  <ng-template #tab>
+    <span class="tab" (click)="null">
+      <app-icon width="30" height="30" [name]="item.icon"></app-icon>
+      <p class="">{{item.type}}</p>
+    </span>
+  </ng-template>
+  <app-card
+    [items]="item.items"
+  ></app-card>
+</app-tab>
+</app-tabs> 

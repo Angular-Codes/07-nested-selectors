@@ -2,7 +2,14 @@
 .cards {
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 16px;
 
+}
+
+.card-content{
+  width: 110px;
+  height: 100px;
+  background-color: #e1e1e1;
+  border-radius: 10px;
 }

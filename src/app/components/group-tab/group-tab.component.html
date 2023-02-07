@@ -1,6 +1,6 @@
 <div class="tabs">
   <button *ngFor="let tab of tabs" (click)="selectTab(tab)" [class.active]="tab.active">
-    {{ tab.title }}
+     <ng-template *ngTemplateOutlet="tab.tab" ></ng-template>
   </button>
 </div>
 <ng-content></ng-content>

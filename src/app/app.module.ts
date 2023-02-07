@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TabComponent } from './components/tab/tab.component';
 import { TabsComponent } from './components/group-tab/group-tab.component';
 import { CardComponent } from './components/card/card.component';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardComponent } from './components/card/card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
