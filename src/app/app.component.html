@@ -5,7 +5,7 @@
     [tab]="tab"
   >
   <ng-template #tab>
-    <span class="tab" (click)="null">
+    <span class="tab" >
       <app-icon width="30" height="30" [name]="item.icon"></app-icon>
       <p class="">{{item.type}}</p>
     </span>
@@ -14,4 +14,4 @@
     [items]="item.items"
   ></app-card>
 </app-tab>
-</app-tabs> 
+</app-tabs>

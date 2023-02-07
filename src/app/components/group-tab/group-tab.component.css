@@ -2,19 +2,19 @@
 .tabs{
   margin-bottom: 10px;
   display: flex;
-  border-bottom: 1px solid #ccc;
 }
 
 .tabs button {
   width: 100%;
   padding: 10px;
-  border-bottom: 3px transparent;
-  border: none;
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
   background-color: #fff;
   cursor: pointer;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  transition: 0.3s;
 }
 
 .tabs button:hover {
@@ -22,7 +22,6 @@
 }
 
 .tabs button.active {
-  font-weight: 400;
   background-color: #2c2a29;
   color: #ffffff;
   border-bottom: 3px solid #fdda24;

@@ -1,16 +1,18 @@
-import { Component, ContentChildren, QueryList, AfterContentInit, OnInit, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { trigger, transition, style, animate, state, keyframes } from '@angular/animations';
+import { Component, ContentChildren, QueryList, AfterViewInit } from '@angular/core';
 import { TabComponent } from '../tab/tab.component';
 
 @Component({
   selector: 'app-tabs',
   templateUrl: './group-tab.component.html',
-  styleUrls: ['./group-tab.component.css']
+  styleUrls: ['./group-tab.component.css'],
 })
 export class TabsComponent implements AfterViewInit {
   
+  state = 'in';
   @ContentChildren(TabComponent) tabs!: QueryList<TabComponent>;
 
-  constructor(private changeDetectorRef: ChangeDetectorRef) { }
+  constructor() { }
 
   ngAfterViewInit() {
     setTimeout(() => {
