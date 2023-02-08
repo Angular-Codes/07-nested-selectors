@@ -8,6 +8,7 @@ import { TabsComponent } from './components/group-tab/group-tab.component';
 import { CardComponent } from './components/card/card.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule, NoopAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BrowserAnimationsModule, NoopAnimationsModule } from "@angular/platform
     AppRoutingModule,
     SharedModule,
     BrowserAnimationsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
